@@ -20,6 +20,7 @@ A repo path, a design doc, or a description. If there's no design doc, build one
    - Which named pattern is it, and is that the right one (the pattern table)?
    - Would a single LLM call or plain code do the job (AP-01, AP-04)?
    - Is its scope narrow, and does it overlap with another agent (AP-07, AP-08)?
+   - **Multi-agent justification:** any design with more than one agent must name which AP-21 reason applies, or that's a finding. Also check AP-22 to AP-26.
    Also look for the reverse: brittle hard-coded logic that would be better as an agent.
 4. **Block design review.** Skills: BB-06 to BB-11 (frontmatter, trigger description, progressive disclosure, scripts, provenance). Tools and MCP servers: BB-12 to BB-18 and AP-11 to AP-15. Context: AP-16 to AP-19. Runtime: BB-19 to BB-22. Also check stop conditions (AP-06).
 5. **Security and governance review.** Go through ASI01–ASI10 and SG-01 to SG-20. Mark each as Met, Partial, Missing, or N/A, with evidence (a file:line or a doc section).

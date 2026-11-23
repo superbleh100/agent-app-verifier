@@ -20,7 +20,7 @@ An AI-first app is built from several kinds of block, and "agent" is only one of
 
 Rules for choosing:
 
-- **BB-01 Climb the ladder only as far as needed:** code → single call → workflow → agent → multi-agent. Every step up must be justified by measured gains. [S1, S5]
+- **BB-01 Climb the ladder only as far as needed:** code → single call → workflow → agent → multi-agent. Every step up must be justified by measured gains. When an agent is warranted, a single agent with tools is the default rung (AP-21). [S1, S5, S14, S15]
 - **BB-02 Actions are tools, know-how is skills.** "How to do X well" belongs in a skill. "Do X" belongs in a tool. Skills can teach the model how to use MCP tools. [S9]
 - **BB-03 Hard guarantees are code or hooks, never just prompt text.** [S4, S5]
 - **BB-04 Use MCP for reuse, not by reflex.** A tool used by one app can be a plain function. [S7, S11] *(T2)*
