@@ -24,12 +24,17 @@
 - **SG-05 Every consequential action has an approval checkpoint**, an approver and an escalation path. Policy-as-code can stand in for a human at scale, but no critical boundary should rely only on AI oversight. [S5]
 - **SG-06 Watch for rubber-stamping.** Track how often reviewers override and how fast they respond. [S4]
 
+- **SG-21 Risk-rate every tool** low, medium or high, by read vs write, reversibility, permissions and financial impact. High-risk tools pause for checks or a human. [S13]
+- **SG-22 Layered guardrails** at user input, tool calls, tool responses and final output. No single guardrail is enough. [S13, S14]
+- **SG-23 Escalate on repeated failure.** After a retry or attempt cap, hand off to a human instead of looping. [S13]
+
 ## Identity and permissions
 
 - **SG-07 Unique identity per agent**, with an accountable owner, listed in a central catalogue. [S4, S6]
 - **SG-08 Least privilege**, time- or session-bound and non-transferable. Agents can't grant themselves access. [S4, S6]
 - **SG-09 Non-additive delegation.** A sub-agent gets the intersection of its own permissions and its caller's. [S5]
 - **SG-10 Limit agent spawning.** [S5]
+- **SG-25 No shared service accounts, and no full user-permission inheritance.** Bind each agent session to the delegating user's scope (for example OAuth scopes bound to a task and time window). [S4, S5, S17]
 
 ## Testing and evaluation
 
@@ -39,6 +44,8 @@
 - **SG-14 Version your evidence.** Keep a regression baseline per configuration, and gate any expansion of authority on new evidence. [S5]
 - **SG-15 Validate LLM judges against humans** before trusting them. [S7]
 - **SG-16 Measure cost and effectiveness**, not only safety. [S5]
+- **SG-24 Red-team indirect injection** (instructions planted in documents, email or web content), with multiple attempts per case, since one-shot tests overstate safety. [S17] *provisional*
+- **SG-26 Evals first, then downsize.** Get a baseline with the most capable model, then swap in smaller models per task only where evals show it holds. [S13]
 
 ## Monitoring and change
 

@@ -31,13 +31,20 @@ Covers apps built from AI building blocks: agents, workflows, skills, tools, MCP
 | S10 | [Writing effective tools for agents](https://www.anthropic.com/engineering/writing-tools-for-agents) | Anthropic | Sep 2025 | T1 | 2026-11-23 |
 | S11 | [Code execution with MCP](https://www.anthropic.com/research/code-execution-with-mcp) | Anthropic | Nov 2025 | T1 | 2026-11-23 |
 | S12 | [Managed Agents architecture](https://www.anthropic.com/engineering/managed-agents) | Anthropic | Apr 2026 | T1 | 2026-11-23 |
+| S13 | [A practical guide to building agents](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf) | OpenAI | 2025 (undated) | T1 | 2026-11-23 |
+| S14 | [AI agent orchestration patterns](https://learn.microsoft.com/azure/architecture/ai-ml/guide/ai-agent-design-patterns) | Microsoft | Sep 2026 | T1 | 2026-11-23 |
+| S15 | [Choose a design pattern for your agentic AI system](https://docs.cloud.google.com/architecture/choose-design-pattern-agentic-ai-system) | Google Cloud | Nov 2026 | T1 | 2026-11-23 |
+| S16 | [Agent Standards Initiative](https://www.nist.gov/caisi/ai-agent-standards-initiative) | NIST CAISI | Nov 2026 | T1 | 2026-11-23 |
+| S17 | [NIST AI agent red-teaming guidance (research note)](https://labs.cloudsecurityalliance.org/research/csa-research-note-nist-ai-agent-red-teaming-standards-202603/) | Cloud Security Alliance | Mar 2026 | T2 | 2026-11-23 |
+| S18 | [Building governed AI agents (cookbook)](https://developers.openai.com/cookbook/examples/partners/agentic_governance_guide/agentic_governance_cookbook/) | OpenAI | Feb 2026 (archived) | T2 | 2026-11-23 |
 | S8 | [State of agentic AI standards in 2026](https://dev.to/alexmercedcoder/the-state-of-agentic-ai-standards-in-2026-mcp-a2a-webmcp-osi-and-the-protocol-stack-taking-3o2l) | dev.to (Alex Merced) | Jul 2026 | T3 | 2026-11-23 |
 
 ## Known gaps (to fill next)
 
 - Read the OWASP document itself instead of a vendor summary.
 - Add eval methodology (no source here covers it in depth yet), NIST AI RMF, ISO/IEC 42001 and EU AI Act Art. 14.
-- Most building-block guidance is from Anthropic. Add other vendors' guidance (OpenAI, Google, Microsoft) so the rules aren't single-vendor.
+- Building-block guidance for skills and MCP is still mostly from Anthropic. Patterns and guardrails now draw on OpenAI, Microsoft and Google (refresh 2026-11-23).
+- NIST CAISI has no finished agent guidance yet. Watch for the NCCoE agent identity paper and the COSAiS overlays. Verify SG-24 against NIST primary sources.
 - Read the MCP spec and the agentskills.io spec directly.
 - Agent identity standards (MCP-I, Agent Name Service, signed Agent Cards) are still immature. Track them, but don't enforce them yet.
 - "EGM standard": no agentic design standard by that name turned up in searches on 2026-11-23.

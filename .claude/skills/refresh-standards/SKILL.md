@@ -13,6 +13,7 @@ The goal is to keep `docs/standards/` and `review-agent-app` current, without le
 2. **Scan for what's new since the last refresh.** Search these at minimum:
    - Standards bodies and governments: OWASP GenAI, NIST, ISO/IEC, IMDA, EU AI Office, W3C, Linux Foundation (A2A, AGNTCY)
    - Model vendors' engineering blogs (Anthropic, OpenAI, Google, Microsoft, AWS)
+   - Vendor architecture guides re-checked every refresh: OpenAI practical guide (S13), Microsoft orchestration patterns (S14), Google design-pattern guide (S15), NIST CAISI (S16)
    - Protocol and format specs: MCP (spec changelog), A2A, WebMCP, Agent Skills (agentskills.io), AGENTS.md
    - New *kinds* of building block. If something new appears (a new extension type or runtime primitive), propose adding a row to the block table in `building-blocks.md`.
    - Open Known Gaps in the README
